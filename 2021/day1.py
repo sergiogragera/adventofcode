@@ -1,4 +1,4 @@
-# https://adventofcode.com/2021/day/1
+# https://adventofcode.com/2021/day/1#part1
 
 def is_increasing(a, b):
     return int(a) <= int(b)
