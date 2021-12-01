@@ -4,7 +4,7 @@ def is_increasing(a, b):
     return int(a) <= int(b)
 
 
-with open('2021/resources/day1.txt', 'r') as file:
+with open('2021/resources/day1.1.txt', 'r') as file:
     measurements = file.readlines()
     increases = sum([is_increasing(measurements[i], measurements[i + 1])
                     for i in range(len(measurements) - 1)])
