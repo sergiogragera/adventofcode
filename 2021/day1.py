@@ -17,11 +17,11 @@ with open('2021/resources/day1.1.txt', 'r') as file:
 # https://adventofcode.com/2021/day/1#part2
 
 
-def get_three_measurments(measurements):
+def reduce_noise(measurements):
     return [sum(measurements[i:i + 3]) for i in range(len(measurements) - 2)]
 
 
 with open('2021/resources/day1.2.txt', 'r') as file:
-    measurements = get_three_measurments(list(map(int, file.readlines())))
+    measurements = reduce_noise(list(map(int, file.readlines())))
     print('Part 2: there are {} measurements that are larger than previous measurement'.format(
         count_increasements(measurements)))
