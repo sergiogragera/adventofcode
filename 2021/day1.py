@@ -1,7 +1,7 @@
 # https://adventofcode.com/2021/day/1#part1
 
 def is_increasing(a, b):
-    return int(a) <= int(b)
+    return int(a) < int(b)
 
 
 with open('2021/resources/day1.1.txt', 'r') as file:
