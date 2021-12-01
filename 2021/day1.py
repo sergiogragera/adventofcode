@@ -10,7 +10,7 @@ def count_increasements(measurements):
 
 
 with open('2021/resources/day1.1.txt', 'r') as file:
-    measurements = list(map(int,file.readlines()))
+    measurements = list(map(int, file.readlines()))
     print('Part 1: there are {} measurements that are larger than previous measurement'.format(
         count_increasements(measurements)))
 
@@ -23,6 +23,6 @@ def get_three_measurments(measurements):
 
 
 with open('2021/resources/day1.2.txt', 'r') as file:
-    measurements = get_three_measurments(list(map(int,file.readlines())))
+    measurements = get_three_measurments(list(map(int, file.readlines())))
     print('Part 2: there are {} measurements that are larger than previous measurement'.format(
         count_increasements(measurements)))
