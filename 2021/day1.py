@@ -18,8 +18,7 @@ with open('2021/resources/day1.1.txt', 'r') as file:
 
 
 def get_three_measurments(measurements):
-    return [measurements[i] + measurements[i + 1] + measurements[i + 2]
-            for i in range(len(measurements) - 2)]
+    return [sum(measurements[i:i + 3]) for i in range(len(measurements) - 2)]
 
 
 with open('2021/resources/day1.2.txt', 'r') as file:
