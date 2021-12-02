@@ -49,12 +49,10 @@ class Submarine2 extends Submarine {
     }
 
     down(y) {
-        //super.down(y);
         this.aim += y;
     }
 
     up(y) {
-        //super.up(y);
         this.aim -= y;
     }
 
